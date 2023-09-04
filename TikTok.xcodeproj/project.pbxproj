@@ -3,10 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845CDA472AA1CFA6006E7275 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 845CDA462AA1CFA6006E7275 /* FirebaseAnalytics */; };
+		845CDA492AA1CFA6006E7275 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 845CDA482AA1CFA6006E7275 /* FirebaseDatabase */; };
+		845CDA4B2AA1CFA6006E7275 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 845CDA4A2AA1CFA6006E7275 /* FirebaseFirestore */; };
+		845CDA512AA1CFA6006E7275 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 845CDA502AA1CFA6006E7275 /* FirebaseMessaging */; };
+		845CDA532AA1CFA6006E7275 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 845CDA522AA1CFA6006E7275 /* FirebaseStorage */; };
+		848654AB2AA1D61800C57A8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848654AA2AA1D61800C57A8F /* GoogleService-Info.plist */; };
+		848654AE2AA1D64800C57A8F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 848654AD2AA1D64800C57A8F /* Kingfisher */; };
+		848654B12AA1D6D400C57A8F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 848654B02AA1D6D400C57A8F /* Lottie */; };
+		848654B42AA1D80200C57A8F /* PryntTrimmerView in Frameworks */ = {isa = PBXBuildFile; productRef = 848654B32AA1D80200C57A8F /* PryntTrimmerView */; };
+		848654B72AA1D85C00C57A8F /* swift-video-generator in Frameworks */ = {isa = PBXBuildFile; productRef = 848654B62AA1D85C00C57A8F /* swift-video-generator */; };
+		848654B92AA1D8AE00C57A8F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 848654B82AA1D8AE00C57A8F /* FirebaseAuth */; };
+		848654BC2AA1D95B00C57A8F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 848654BB2AA1D95B00C57A8F /* PanModal */; };
+		848654BE2AA1D99100C57A8F /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 848654BD2AA1D99100C57A8F /* FirebaseFirestoreSwift */; };
 		B36F8E03F83508A53F379D6B /* Pods_TikTok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7964359627A7E1C8A7A59346 /* Pods_TikTok.framework */; };
 		E9011F4B25350C2900376AE6 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9011F4A25350C2900376AE6 /* DiscoverVC.swift */; };
 		E9011F4D253516F200376AE6 /* SearchCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9011F4C253516F200376AE6 /* SearchCustomization.swift */; };
@@ -86,7 +99,6 @@
 		E9C8F2EA251D7FA900D8E3E5 /* TikTokUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C8F2E9251D7FA900D8E3E5 /* TikTokUser.swift */; };
 		E9C9D8E12579652800AB2EB4 /* PreviewSelectedAssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9D8E02579652800AB2EB4 /* PreviewSelectedAssetsView.swift */; };
 		E9C9D8E325796BA100AB2EB4 /* PreviewSelectedAssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C9D8E225796BA100AB2EB4 /* PreviewSelectedAssetCell.swift */; };
-		E9D156592532964400141CB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9D156582532964400141CB4 /* GoogleService-Info.plist */; };
 		E9D4F855262130DB009A81FB /* TrimVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D4F854262130DB009A81FB /* TrimVideoVC.swift */; };
 		E9D58644251989960042BD6E /* TikTokDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D58643251989960042BD6E /* TikTokDetailsVC.swift */; };
 		E9D6AF8C25C7953800F57FFF /* CreateUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D6AF8B25C7953800F57FFF /* CreateUsernameVC.swift */; };
@@ -126,6 +138,7 @@
 		0CEFABCEF9D39D7886FC19A8 /* Pods-TikTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.release.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.release.xcconfig"; sourceTree = "<group>"; };
 		75BF5F06EBE7BAE692582A70 /* Pods-TikTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.debug.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.debug.xcconfig"; sourceTree = "<group>"; };
 		7964359627A7E1C8A7A59346 /* Pods_TikTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848654AA2AA1D61800C57A8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9011F4A25350C2900376AE6 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
 		E9011F4C253516F200376AE6 /* SearchCustomization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCustomization.swift; sourceTree = "<group>"; };
 		E9011F4E25351B8700376AE6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -204,7 +217,6 @@
 		E9C8F2E9251D7FA900D8E3E5 /* TikTokUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokUser.swift; sourceTree = "<group>"; };
 		E9C9D8E02579652800AB2EB4 /* PreviewSelectedAssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSelectedAssetsView.swift; sourceTree = "<group>"; };
 		E9C9D8E225796BA100AB2EB4 /* PreviewSelectedAssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSelectedAssetCell.swift; sourceTree = "<group>"; };
-		E9D156582532964400141CB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E9D4F854262130DB009A81FB /* TrimVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimVideoVC.swift; sourceTree = "<group>"; };
 		E9D58643251989960042BD6E /* TikTokDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokDetailsVC.swift; sourceTree = "<group>"; };
 		E9D6AF8B25C7953800F57FFF /* CreateUsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameVC.swift; sourceTree = "<group>"; };
@@ -247,7 +259,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845CDA492AA1CFA6006E7275 /* FirebaseDatabase in Frameworks */,
+				848654B42AA1D80200C57A8F /* PryntTrimmerView in Frameworks */,
+				845CDA4B2AA1CFA6006E7275 /* FirebaseFirestore in Frameworks */,
+				848654AE2AA1D64800C57A8F /* Kingfisher in Frameworks */,
+				848654B72AA1D85C00C57A8F /* swift-video-generator in Frameworks */,
+				845CDA512AA1CFA6006E7275 /* FirebaseMessaging in Frameworks */,
+				845CDA472AA1CFA6006E7275 /* FirebaseAnalytics in Frameworks */,
+				848654BE2AA1D99100C57A8F /* FirebaseFirestoreSwift in Frameworks */,
+				848654B92AA1D8AE00C57A8F /* FirebaseAuth in Frameworks */,
+				848654BC2AA1D95B00C57A8F /* PanModal in Frameworks */,
+				845CDA532AA1CFA6006E7275 /* FirebaseStorage in Frameworks */,
 				B36F8E03F83508A53F379D6B /* Pods_TikTok.framework in Frameworks */,
+				848654B12AA1D6D400C57A8F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +649,7 @@
 				E9F7F2AD2505C1D300D2ED5E /* Assets.xcassets */,
 				E9F7F2AF2505C1D300D2ED5E /* LaunchScreen.storyboard */,
 				E9F7F2B22505C1D300D2ED5E /* Info.plist */,
-				E9D156582532964400141CB4 /* GoogleService-Info.plist */,
+				848654AA2AA1D61800C57A8F /* GoogleService-Info.plist */,
 			);
 			path = TikTok;
 			sourceTree = "<group>";
@@ -683,6 +707,20 @@
 			dependencies = (
 			);
 			name = TikTok;
+			packageProductDependencies = (
+				845CDA462AA1CFA6006E7275 /* FirebaseAnalytics */,
+				845CDA482AA1CFA6006E7275 /* FirebaseDatabase */,
+				845CDA4A2AA1CFA6006E7275 /* FirebaseFirestore */,
+				845CDA502AA1CFA6006E7275 /* FirebaseMessaging */,
+				845CDA522AA1CFA6006E7275 /* FirebaseStorage */,
+				848654AD2AA1D64800C57A8F /* Kingfisher */,
+				848654B02AA1D6D400C57A8F /* Lottie */,
+				848654B32AA1D80200C57A8F /* PryntTrimmerView */,
+				848654B62AA1D85C00C57A8F /* swift-video-generator */,
+				848654B82AA1D8AE00C57A8F /* FirebaseAuth */,
+				848654BB2AA1D95B00C57A8F /* PanModal */,
+				848654BD2AA1D99100C57A8F /* FirebaseFirestoreSwift */,
+			);
 			productName = TikTok;
 			productReference = E9F7F2A12505C1D000D2ED5E /* TikTok.app */;
 			productType = "com.apple.product-type.application";
@@ -693,8 +731,9 @@
 		E9F7F2992505C1D000D2ED5E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Osaretin Uyigue";
 				TargetAttributes = {
 					E9F7F2A02505C1D000D2ED5E = {
@@ -711,6 +750,14 @@
 				Base,
 			);
 			mainGroup = E9F7F2982505C1D000D2ED5E;
+			packageReferences = (
+				845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				848654AC2AA1D64800C57A8F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				848654AF2AA1D6D400C57A8F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				848654B22AA1D80200C57A8F /* XCRemoteSwiftPackageReference "PryntTrimmerView" */,
+				848654B52AA1D85C00C57A8F /* XCRemoteSwiftPackageReference "swift-video-generator" */,
+				848654BA2AA1D95B00C57A8F /* XCRemoteSwiftPackageReference "PanModal" */,
+			);
 			productRefGroup = E9F7F2A22505C1D000D2ED5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -738,7 +785,7 @@
 				E9215ABC263F7EA9006B0090 /* Burna Boy - Anybody.mp3 in Resources */,
 				E95AB020266D8B4D00A26788 /* sounds  good.ttf in Resources */,
 				E9FB71BE25DC649E005A4F90 /* handwriting.otf in Resources */,
-				E9D156592532964400141CB4 /* GoogleService-Info.plist in Resources */,
+				848654AB2AA1D61800C57A8F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,6 +979,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -956,13 +1004,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -992,6 +1041,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1010,12 +1060,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1026,14 +1077,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M6D9BZ85YH;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TikTok/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SamiSays11.comG.TikTok;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ln.tiktok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1046,14 +1097,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M6D9BZ85YH;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TikTok/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SamiSays11.comG.TikTok;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ln.tiktok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1082,6 +1133,120 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		848654AC2AA1D64800C57A8F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		848654AF2AA1D6D400C57A8F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		848654B22AA1D80200C57A8F /* XCRemoteSwiftPackageReference "PryntTrimmerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HHK1/PryntTrimmerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		848654B52AA1D85C00C57A8F /* XCRemoteSwiftPackageReference "swift-video-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dev-labs-bg/swift-video-generator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		848654BA2AA1D95B00C57A8F /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		845CDA462AA1CFA6006E7275 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		845CDA482AA1CFA6006E7275 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		845CDA4A2AA1CFA6006E7275 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		845CDA502AA1CFA6006E7275 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		845CDA522AA1CFA6006E7275 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		848654AD2AA1D64800C57A8F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848654AC2AA1D64800C57A8F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		848654B02AA1D6D400C57A8F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848654AF2AA1D6D400C57A8F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		848654B32AA1D80200C57A8F /* PryntTrimmerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848654B22AA1D80200C57A8F /* XCRemoteSwiftPackageReference "PryntTrimmerView" */;
+			productName = PryntTrimmerView;
+		};
+		848654B62AA1D85C00C57A8F /* swift-video-generator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848654B52AA1D85C00C57A8F /* XCRemoteSwiftPackageReference "swift-video-generator" */;
+			productName = "swift-video-generator";
+		};
+		848654B82AA1D8AE00C57A8F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		848654BB2AA1D95B00C57A8F /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 848654BA2AA1D95B00C57A8F /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
+		848654BD2AA1D99100C57A8F /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845CDA452AA1CFA6006E7275 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9F7F2992505C1D000D2ED5E /* Project object */;
 }

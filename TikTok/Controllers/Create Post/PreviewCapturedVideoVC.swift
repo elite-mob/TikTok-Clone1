@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import SwiftVideoGenerator
 import EasyTipView
-import SVProgressHUD
+//import SVProgressHUD
 class PreviewCapturedVideoVC: UIViewController, UIGestureRecognizerDelegate {
     
     //MARK: Init

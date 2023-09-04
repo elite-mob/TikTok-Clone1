@@ -7,7 +7,8 @@
 
 import UIKit
 import Firebase
-
+import FirebaseFirestore
+import FirebaseStorage
 
 enum UploadType {
     case profile

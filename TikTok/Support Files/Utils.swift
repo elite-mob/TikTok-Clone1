@@ -8,7 +8,7 @@
 
 import UIKit
 import Photos
-import SVProgressHUD
+//import SVProgressHUD
 
 import UIKit
 extension UIColor {
@@ -972,8 +972,8 @@ class Reachability {
 
 
  func presentNetworkErrorMessage() {
-    SVProgressHUD.showError(withStatus: "internet connection unavailable")
-    SVProgressHUD.dismiss(withDelay: 3)
+//    SVProgressHUD.showError(withStatus: "internet connection unavailable")
+//    SVProgressHUD.dismiss(withDelay: 3)
 }
 
  func checkForConnection() -> Bool {

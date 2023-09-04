@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SVProgressHUD
+//import SVProgressHUD
 protocol EnterTextVCDelegate: class {
     func enterTextVCWillDisappear()
     func addNewStickerToView(stickerText: String, textColor: UIColor, textAlignment: NSTextAlignment, stickerBackgroundColor: UIColor, stickerFont: UIFont, currentBackgroundColorStyle: TextViewBackgroundColoringStyle)

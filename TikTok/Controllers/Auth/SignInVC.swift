@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+//import SVProgressHUD
 class SignInVC: UIViewController, UITextFieldDelegate {
     
     //MARK: Init
@@ -195,21 +195,21 @@ class SignInVC: UIViewController, UITextFieldDelegate {
     @objc fileprivate func handleDidTapLogInButton() {
        
         guard let email = emailTextField.text else {
-            SVProgressHUD.showError(withStatus: "Please enter a valid email")
-            SVProgressHUD.dismiss(withDelay: 2.0)
+//            SVProgressHUD.showError(withStatus: "Please enter a valid email")
+//            SVProgressHUD.dismiss(withDelay: 2.0)
             return}
         
         
         guard let password = passwordTextField.text else {
-            SVProgressHUD.showError(withStatus: "Please enter a valid password")
-            SVProgressHUD.dismiss(withDelay: 2.0)
+//            SVProgressHUD.showError(withStatus: "Please enter a valid password")
+//            SVProgressHUD.dismiss(withDelay: 2.0)
             return }
         
         logInButton.isEnabled = false
         Auth.auth().signIn(withEmail: email, password: password) {[weak self] (authResult, error) in
             if error != nil {
-                SVProgressHUD.showError(withStatus: error?.localizedDescription)
-                SVProgressHUD.dismiss(withDelay: 2.0)
+//                SVProgressHUD.showError(withStatus: error?.localizedDescription)
+//                SVProgressHUD.dismiss(withDelay: 2.0)
                 self?.logInButton.isEnabled = true
                 return
             }
@@ -223,9 +223,9 @@ class SignInVC: UIViewController, UITextFieldDelegate {
         let mainTabbarVC = MainTabBarController()
         mainTabbarVC.modalPresentationStyle = .fullScreen
         present(mainTabbarVC, animated: true) {
-            SVProgressHUD.showSuccess(withStatus: "Welcome Back To TikTok")
-            SVProgressHUD.setDefaultStyle(.dark)
-            SVProgressHUD.dismiss(withDelay: 3.0)
+//            SVProgressHUD.showSuccess(withStatus: "Welcome Back To TikTok")
+//            SVProgressHUD.setDefaultStyle(.dark)
+//            SVProgressHUD.dismiss(withDelay: 3.0)
         }
     }
     

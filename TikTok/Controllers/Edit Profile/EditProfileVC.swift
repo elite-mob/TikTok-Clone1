@@ -8,7 +8,9 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+import FirebaseStorage
+
+//import SVProgressHUD
 protocol EditProfileVCDelegate: AnyObject {
     func didFinishPickingImage(image: UIImage)
 }
@@ -106,8 +108,8 @@ class EditProfileVC: UICollectionViewController {
             if let currentUid = CURRENT_UID {
                 ImageUploader.uploadImage(image: image, type: .profile) { imageUrl in
                     Database.database().reference().child("users").child(currentUid).child("profileImageUrl").setValue(imageUrl)
-                    SVProgressHUD.showSuccess(withStatus: "Success!")
-                    SVProgressHUD.dismiss(withDelay: 1.5)
+//                    SVProgressHUD.showSuccess(withStatus: "Success!")
+//                    SVProgressHUD.dismiss(withDelay: 1.5)
                 }
             }
         }
@@ -116,7 +118,7 @@ class EditProfileVC: UICollectionViewController {
     
     
      func deleteCurrentProfileImgFromStorage(image: UIImage) {
-        SVProgressHUD.show()
+//        SVProgressHUD.show()
         guard let profileImgUrl = currentUser?.profileImageUrl else {return}
         //MARK: This is for when a new user is changing their PP for the first time. so we dont delete the default pp from storage.
         if profileImgUrl == DEFAULT_PROFILE_IMAGE_URL_STRING {

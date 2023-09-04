@@ -8,7 +8,11 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+import FirebaseFirestore
+import FirebaseFirestoreSwift
+import FirebaseStorage
+
+//import SVProgressHUD
 class SharePostVC: UIViewController {
     
     //MARK: Init
@@ -482,8 +486,8 @@ class SharePostVC: UIViewController {
                 if let err = error {
                     print("Failed to upload videoUrl to Database:", err.localizedDescription)
                     handleNetworkCheck()
-                    SVProgressHUD.showError(withStatus: "Error uploading videoUrl to storage")
-                    SVProgressHUD.dismiss(withDelay: 2.5)
+//                    SVProgressHUD.showError(withStatus: "Error uploading videoUrl to storage")
+//                    SVProgressHUD.dismiss(withDelay: 2.5)
                     return
                 }
                 
@@ -491,8 +495,8 @@ class SharePostVC: UIViewController {
                 storageItem.child(filename).downloadURL(completion: { (videoUrl, error) in
                     if error != nil {
                         print("Failed to download url:", error?.localizedDescription ?? "")
-                        SVProgressHUD.showError(withStatus: "Error downloading videourl's downloadURL")
-                        SVProgressHUD.dismiss(withDelay: 2.5)
+//                        SVProgressHUD.showError(withStatus: "Error downloading videourl's downloadURL")
+//                        SVProgressHUD.dismiss(withDelay: 2.5)
                         return
                     }
                     
@@ -510,21 +514,22 @@ class SharePostVC: UIViewController {
             let filename = NSUUID().uuidString
             guard let selectedPhoto = thumbnailImageView.image else {return}
             guard let uploadData = selectedPhoto.jpegData(compressionQuality: 1) else {return}
+        
             let storageItem = Storage.storage().reference().child("post_images")
            let uploadTask = storageItem.child(filename).putData(uploadData, metadata: nil) { (metadata, error) in
                 if let err = error {
                     print("Failed to upload Image Data to storage:", err.localizedDescription)
                     handleNetworkCheck()
-                    SVProgressHUD.showError(withStatus: "Error uploading thumbnailImage to storage")
-                    SVProgressHUD.dismiss(withDelay: 2.5)
+//                    SVProgressHUD.showError(withStatus: "Error uploading thumbnailImage to storage")
+//                    SVProgressHUD.dismiss(withDelay: 2.5)
                     return
                 }
             
             storageItem.child(filename).downloadURL(completion: { (imageUrl, error) in
                 if error != nil {
                     print("Failed to download url:", error?.localizedDescription ?? "")
-                    SVProgressHUD.showError(withStatus: "Error downloading thumbnailImage")
-                    SVProgressHUD.dismiss(withDelay: 2.5)
+//                    SVProgressHUD.showError(withStatus: "Error downloading thumbnailImage")
+//                    SVProgressHUD.dismiss(withDelay: 2.5)
                     return
                 }
                 
@@ -552,8 +557,8 @@ class SharePostVC: UIViewController {
         let postHashMap: [String: Any] = ["postImageUrl": postImageUrl, "videoUrl": videoUrlString, "caption": textView.text ?? "",  "creationDate": Date().timeIntervalSince1970, "ownerUid": currentUid, "likes": 0, "views": 0, "commentCount": 0]
 //               let postHashMap : [String : Any] = ["postImageUrl": "", "ownerUid": currentUid, "views": 0, "likes": 0, "caption": textView.text ?? ""]
                ref.child(postId).setValue(postHashMap)
-               SVProgressHUD.showSuccess(withStatus: "Successfuly saved to db")
-               SVProgressHUD.dismiss(withDelay: 2.0)
+//               SVProgressHUD.showSuccess(withStatus: "Successfuly saved to db")
+//               SVProgressHUD.dismiss(withDelay: 2.0)
         dismiss(animated: true) {
             FileManager.default.clearTmpDirectory()
 

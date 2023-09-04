@@ -16,7 +16,7 @@
 import UIKit
 import PryntTrimmerView
 import AVKit
-import SVProgressHUD
+//import SVProgressHUD
 class SetDurationContainerView: UIView {
     
     //MARK: - Init

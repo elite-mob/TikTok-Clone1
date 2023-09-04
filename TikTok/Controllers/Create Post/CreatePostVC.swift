@@ -10,7 +10,7 @@ import UIKit
 import Photos
 import AVKit
 import AVFoundation
-import SVProgressHUD
+//import SVProgressHUD
 fileprivate let cameraCellReuseIdentifier = "cameraCellReuseIdentifier"
 fileprivate let templatesCellReuseIdentifier = "templatesCellReuseIdentifier"
 fileprivate let headerReuseIdentifier = "headerReuseIdentifier"
@@ -743,8 +743,8 @@ class CreatePostVC: UIViewController {
             if maxVidDurationExhasuted == false {
                 startRecording()
             } else {
-                SVProgressHUD.show(withStatus: "You cant record more")
-                SVProgressHUD.dismiss(withDelay: 1.0)
+//                SVProgressHUD.show(withStatus: "You cant record more")
+//                SVProgressHUD.dismiss(withDelay: 1.0)
             }
         } else {
             stopRecording()

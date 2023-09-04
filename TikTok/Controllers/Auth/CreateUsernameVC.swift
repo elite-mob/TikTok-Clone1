@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-import SVProgressHUD
+//import SVProgressHUD
 class CreateUsernameVC: UIViewController, UITextFieldDelegate {
     
     //MARK: Init
@@ -140,9 +140,9 @@ class CreateUsernameVC: UIViewController, UITextFieldDelegate {
         
         Auth.auth().createUser(withEmail: emailAddress, password: password) {[weak self] (authResult, error) in
             if error != nil {
-                SVProgressHUD.showError(withStatus: error?.localizedDescription)
-                SVProgressHUD.dismiss(withDelay: 1.5)
-                SVProgressHUD.setDefaultStyle(.dark)
+//                SVProgressHUD.showError(withStatus: error?.localizedDescription)
+//                SVProgressHUD.dismiss(withDelay: 1.5)
+//                SVProgressHUD.setDefaultStyle(.dark)
                 self?.signUpButton.isEnabled = true
             } else {
                 //
@@ -159,9 +159,9 @@ class CreateUsernameVC: UIViewController, UITextFieldDelegate {
                         let mainTabbarVC = MainTabBarController()
                         mainTabbarVC.modalPresentationStyle = .fullScreen
                         self.present(mainTabbarVC, animated: true) {
-                            SVProgressHUD.showSuccess(withStatus: "Welcome To TikTok")
-                            SVProgressHUD.setDefaultStyle(.dark)
-                            SVProgressHUD.dismiss(withDelay: 3.0)
+//                            SVProgressHUD.showSuccess(withStatus: "Welcome To TikTok")
+//                            SVProgressHUD.setDefaultStyle(.dark)
+//                            SVProgressHUD.dismiss(withDelay: 3.0)
                         }
                     }
                 }
